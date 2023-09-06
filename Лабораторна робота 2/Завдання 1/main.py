@@ -1,16 +1,16 @@
-start = 5
-end = 25
-a, b = 1, 1
+from cmath import sin
+def finding (m):
+    z = sin(a+b) * sin(a-b)
+    return z
 
-# Пропускаємо перші 4 числа Фібоначчі
-for i in range(start - 1):
-    a, b = b, a + b
+a = print(input("Введіть число a: "))
+b = print(input("Введіть число b: "))
 
-# Виводимо ряд Фібоначчі від 5-го до 25-го члена і підраховуємо кількість чисел
-print("Ряд Фібоначчі з {}-го до {}-го члена:".format(start, end))
-count = 0
-for i in range(start, end):
-    print(a, end=" ")
-    a, b = b, a + b
-    count += 1
-print("\nКількість чисел у ряді:", count)
+print(finding(m))
+
+def sportsmen():
+    M += (K / 100) * M
+
+
+
+
