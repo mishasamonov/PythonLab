@@ -1,15 +1,27 @@
 from cmath import sin
-def finding (m):
+def finding():
     z = sin(a+b) * sin(a-b)
     return z
+def sportsmanNorma(M,K):
+    M = (M * K / 100) + M
+    return M
 
-a = print(input("Введіть число a: "))
-b = print(input("Введіть число b: "))
+a = float(input("Введіть число a: "))
+b = float(input("Введіть число b: "))
 
-print(finding(m))
+print("Значення виразу z = ", finding())
 
-def sportsmen():
-    M += (K / 100) * M
+
+day = 1
+M = float(input("Введіть скільки кілометрів пробігає спортсмен в 1-й день: "))
+K = float(input("Введіть відсоток з яким буде збільшено норму пробігу спортсмена: "))
+
+while M < 50:
+    day += 1
+    M = sportsmanNorma(M,K)
+
+print("Норма пробігу спортсмена становить більше 50км через: ", day, " днів")
+
 
 
 

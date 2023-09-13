@@ -1,16 +1,29 @@
-start = 5
-end = 25
-a, b = 1, 1
+import random
 
-# Пропускаємо перші 4 числа Фібоначчі
-for i in range(start - 1):
-    a, b = b, a + b
+mainStack = []
+def randomNumber():
+    return random.randint(1, 1000)
 
-# Виводимо ряд Фібоначчі від 5-го до 25-го члена і підраховуємо кількість чисел
-print("Ряд Фібоначчі з {}-го до {}-го члена:".format(start, end))
-count = 0
-for i in range(start, end):
-    print(a, end=" ")
-    a, b = b, a + b
-    count += 1
-print("\nКількість чисел у ряді:", count)
+for i in range(126):
+    mainStack.append(randomNumber())
+
+parniStack = []
+neParniStack = []
+
+for number in mainStack:
+    if number % 2 == 0:
+        parniStack.append(number)
+    else:
+        neParniStack.append(number)
+
+print("Головний стек: ", mainStack)
+
+print("Елементи парного стеку: ")
+for number in parniStack:
+    print(number)
+
+print()
+
+print("Елементи непарного стеку: ")
+for number in neParniStack:
+    print(number)
