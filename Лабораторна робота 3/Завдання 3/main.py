@@ -1,17 +1,4 @@
-from math import sin
-def finding(a,b):
-    z = sin(a+b) * sin(a-b)
-    return float(z)
-def sportsmanNorma(M,K):
-    M = (M * K / 100) + M
-    return M
-
-a = float(input("Введіть число a: "))
-b = float(input("Введіть число b: "))
-
-print("Значення виразу z = ", finding(a,b))
-
-
+from dop import sportsmanNorma
 day = 1
 M = float(input("Введіть скільки кілометрів пробігає спортсмен в 1-й день: "))
 K = float(input("Введіть відсоток з яким буде збільшено норму пробігу спортсмена: "))
@@ -21,8 +8,4 @@ while M < 50:
     M = sportsmanNorma(M,K)
 
 print("Норма пробігу спортсмена становить більше 50км через: ", day, " днів")
-
-
-
-
 
