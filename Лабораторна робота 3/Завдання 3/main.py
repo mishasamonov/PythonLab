@@ -1,11 +1,11 @@
-from dop import sportsmanNorma
-day = 1
-M = float(input("Введіть скільки кілометрів пробігає спортсмен в 1-й день: "))
-K = float(input("Введіть відсоток з яким буде збільшено норму пробігу спортсмена: "))
+sentence = input("Введіть речення: ")
+words = sentence.split()
+flag = 0
+print("Слова які містять 3 літери 'e': ")
+for word in words:
+    if word.count('e') == 3:
+        print(word)
+        flag += 1
 
-while M < 50:
-    day += 1
-    M = sportsmanNorma(M,K)
-
-print("Норма пробігу спортсмена становить більше 50км через: ", day, " днів")
-
+if flag == 0:
+    print("Не знайдено слів, які містять 3 літери 'e'")
