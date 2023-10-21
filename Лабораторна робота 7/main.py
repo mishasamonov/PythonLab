@@ -5,7 +5,7 @@ def PrintAllStudents(students):
 def AddNewStudent(students):
     while True:
 
-        name = input("Введіть Ім'я_Прізвище учня ")
+        name = input("Введіть Ім'я Прізвище учня ")
         if not name.isdigit():
             break
         else:
@@ -92,6 +92,7 @@ while True:
 
     choice = int(input("Введіть команду з меню: "))
 
+
     if choice == 1:
         PrintAllStudents(students)
 
@@ -112,5 +113,13 @@ while True:
 
     if choice == 7:
         break
+
+    if choice > 7:
+        print("Команди під таким номером не існує! Спробуйте ще раз.")
+
+    if choice < 1:
+        print("Команди під таким номером не існує! Спробуйте ще раз.")
+
+
     input("Натисніть Enter щоб продовжити ...")
 
