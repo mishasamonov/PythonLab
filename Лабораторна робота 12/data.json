@@ -1,0 +1,26 @@
+[
+  {
+    "Surname": "Vasiliy",
+    "Name": "Logvinov",
+    "Adress": "Mira 5",
+    "School": 9,
+    "Class": 6,
+    "Day_of_week": "Sunday"
+  },
+  {
+    "Surname": "Anton",
+    "Name": "Lipovyi",
+    "Adress": "Naberezhnaya 10",
+    "School": 10,
+    "Class": 10,
+    "Day_of_week": "Saturday"
+  },
+  {
+    "Surname": "Samonov",
+    "Name": "Misha",
+    "Adress": "Chkalova",
+    "School": 1,
+    "Class": 8,
+    "Day_of_week": "Saturday"
+  }
+]
